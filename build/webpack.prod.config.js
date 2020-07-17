@@ -21,8 +21,5 @@ module.exports = merge(baseWebpackConfig, {
     mode:"production",
     plugins:[
         htmlWebpack
-    ],
-    devServer:{
-        
-    }
+    ]
 })
