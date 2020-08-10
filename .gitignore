@@ -1,5 +1,6 @@
 /node_modules
 /dist
+/source
 
 .DS_Store
 

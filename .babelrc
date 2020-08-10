@@ -12,6 +12,13 @@
         ["@babel/plugin-transform-runtime",{
             "corejs":2,//polyfill 需要使用@babel/runtime-corejs2
             "useBuildIns":"usage"//按需引入，即使用什么新特性打包什么新特性
-        }]
+        }],
+        "@babel/plugin-proposal-class-properties",
+        ["import",{
+            "libraryName":"antd",
+            "libraryDirectory":"es",
+            "style":"css"
+        }],
+        "react-html-attrs" // class 替换 className
     ]
 }

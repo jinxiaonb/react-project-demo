@@ -4,3 +4,7 @@
   * node-sass这个包需要科学上网才好下载
   * build/utils.js这个文件用于打包时公用的方法
   * html-webpack-plugin在dev和prod下配置不同，主要区别是文件的压缩和属性值上引号
+
+### 以下是v1.0.2 npm 安装的包
+* react-router-dom:该包是基于react-router，额外加入浏览器环境下的功能
+* 管理数据：[mobx](https://cn.mobx.js.org/) mobx-react

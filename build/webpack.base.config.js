@@ -1,6 +1,7 @@
 const path = require("path");
 const utils = require("./utils");
 
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry:{//入口
@@ -75,7 +76,19 @@ module.exports = {
         ]
     },
     plugins:[
-        
+        new CopyPlugin({
+                patterns:[
+                    {
+                        from: utils.resolve("../static"),
+                        to: "static",
+                        globOptions:{
+                            // dot:true,
+                            // gitignore:true,
+                            ignore:['.*']
+                        }
+                    }
+                ]
+            })
     ],
     resolve:{
         extensions:['.js','.jsx','.json'],

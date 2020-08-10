@@ -1,0 +1,39 @@
+const routes = [
+    {
+        title:"简历管理",
+        icon:"home",
+        path:"/resume"
+    },
+    {
+        title:"用户管理",
+        icon:"setting",
+        path:"/user",
+        children:[
+            {
+                title:"用户列表",
+                path:"/user/list",
+            },
+            {
+                title:"添加用户",
+                path:"/user/add",
+            }
+        ]
+    },
+    {
+        title:"博客管理",
+        icon:"home",
+        path:"/blog",
+        children:[
+            {
+                title:"博客列表",
+                path:"/blog/list",
+            },
+            {
+                title:"添加博客",
+                path:"/blog/add",
+            }
+        ]
+    }
+];
+
+export default routes;
