@@ -24,7 +24,11 @@ module.exports = merge(baseWebpackConfig, {
         port:"8081",//指定端口号
         publicPath:"/",//访问资源加前缀
         proxy:{//请求接口代理
-
+            '/apiTest':{
+                target:'http://localhost:3001',
+                changeOrigin:true,
+                secure:false
+            }
         }
     }
 })

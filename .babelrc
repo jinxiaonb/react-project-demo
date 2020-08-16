@@ -13,7 +13,8 @@
             "corejs":2,//polyfill 需要使用@babel/runtime-corejs2
             "useBuildIns":"usage"//按需引入，即使用什么新特性打包什么新特性
         }],
-        "@babel/plugin-proposal-class-properties",
+        ["@babel/plugin-proposal-decorators",{"legacy":true}],
+        ["@babel/plugin-proposal-class-properties",{"loose":true}],
         ["import",{
             "libraryName":"antd",
             "libraryDirectory":"es",
